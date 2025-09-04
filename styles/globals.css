@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+}
+
+body {
+  @apply bg-gradient-to-br from-purple-50 to-indigo-50 min-h-screen;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-semibold transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6;
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
